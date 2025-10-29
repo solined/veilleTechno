@@ -28,6 +28,7 @@ jobs:
         working-directory: ./api-portfolio
         run: composer require --dev phpunit/phpunit ^10
 
+
       - name: Run PHPUnit tests
         working-directory: ./api-portfolio
         run: ./vendor/bin/phpunit
