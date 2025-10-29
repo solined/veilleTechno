@@ -1,16 +1,29 @@
-name: Symfony API Tests
-on: [push, pull_request]
+name: Tests API Portfolio
+
+on:
+  push:
+    paths:
+      - 'api-portfolio/**'  # déclenche seulement si dossier api-portfolio change
+  pull_request:
+    paths:
+      - 'api-portfolio/**'
 
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
+
       - name: Install dependencies
-        run: cd api-portfolio && composer install
-      - name: Run tests
-        run: cd api-portfolio && php bin/phpunit
+        working-directory: ./api-portfolio
+        run: composer install
+
+      - name: Run PHPUnit tests
+        working-directory: ./api-portfolio
+        run: php bin/phpunit
