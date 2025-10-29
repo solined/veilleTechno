@@ -13,9 +13,9 @@ class Kernel extends BaseKernel
         return [];
     }
 
-    public function configureContainer(ContainerBuilder $c, LoaderInterface $loader): void
+    public function registerContainerConfiguration(LoaderInterface $loader): void
     {
-        // Pas de services pour ce mini-projet
+        // Pas de configuration pour ce mini-projet
     }
 
     public function configureRoutes(RouteCollectionBuilder $routes): void
