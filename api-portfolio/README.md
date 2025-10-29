@@ -14,7 +14,7 @@ CI/CD via GitHub Actions : état automatique des tests GitHub Actions (✅ ou �
 ![Tests](https://github.com/sdurand/api-portfolio/actions/workflows/tests.yml/badge.svg)
 
 
-![Tests](https://github.com/solined/veilleTechno/blob/main/.github/workflows/tests-api-portfolio.yml/badge.svg)
+![Tests](https://github.com/solined/veilleTechno/.github/workflows/tests-api-portfolio.yml/badge.svg)
 ## 📘 Documentation
 Swagger : `openapi.yaml`
 
