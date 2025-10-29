@@ -11,6 +11,6 @@ jobs:
         with:
           php-version: '8.3'
       - name: Install dependencies
-        run: composer install
+        run: cd api-portfolio && composer install
       - name: Run tests
-        run: php bin/phpunit
+        run: cd api-portfolio && php bin/phpunit
