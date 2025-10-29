@@ -13,6 +13,7 @@ class BookControllerTest extends WebTestCase
         $this->assertResponseHeaderSame('content-type', 'application/json; charset=utf-8');
     }
 
+    
     public function testCreateBook(): void
     {
         $client = static::createClient();
