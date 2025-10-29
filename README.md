@@ -6,7 +6,7 @@ cf. wiki  : https://github.com/solined/veilleTechno/wiki
 # 🚀 Veille Techno & Démonstrations API
 
 - [Wiki complet](https://github.com/solined/veilleTechno/wiki)
-- [API Portfolio (Symfony + Swagger + CI)](./api-portfolio/)
+- [API Portfolio (Symfony + Swagger + CI)](./api-portfolio/) (https://github.com/solined/veilleTechno/wiki/api-portfolio) 
 - [Refactorisation PHP](./Refactorisation/)
 - [Kubernetes — notes et exemples](./Kubernetes/)
 
