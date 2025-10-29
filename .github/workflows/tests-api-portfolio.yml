@@ -31,4 +31,4 @@ jobs:
 
       - name: Run PHPUnit tests
         working-directory: ./api-portfolio
-        run: ./vendor/bin/phpunit tests
+        run: ./vendor/bin/phpunit
