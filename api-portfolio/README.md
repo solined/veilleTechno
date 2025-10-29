@@ -12,6 +12,7 @@ Les tests sont automatisés avec PHPUnit.
 CI/CD via GitHub Actions : état automatique des tests GitHub Actions (✅ ou ❌)
 ![Tests](https://github.com/solined/veilleTechno/actions/workflows/tests-api-portfolio.yml/badge.svg)
 
+
 ## 📘 Documentation
 Swagger : `openapi.yaml`
 
