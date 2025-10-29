@@ -23,7 +23,11 @@ jobs:
       - name: Install dependencies
         working-directory: ./api-portfolio
         run: composer install
+        
+      - name: Install PHPUnit
+        working-directory: ./api-portfolio
+        run: composer require --dev phpunit/phpunit ^10
 
       - name: Run PHPUnit tests
         working-directory: ./api-portfolio
-        run: php bin/phpunit
+        run: ./vendor/bin/phpunit
