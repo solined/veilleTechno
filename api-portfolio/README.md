@@ -9,8 +9,10 @@ Une mini API REST construite avec Symfony, documentée via OpenAPI, testée avec
 
 ## 🧪 Tests
 Les tests sont automatisés avec PHPUnit.  
-CI/CD via GitHub Actions :  
+CI/CD via GitHub Actions :
+état automatique des tests GitHub Actions (✅ ou ❌)
 ![Tests](https://github.com/sdurand/api-portfolio/actions/workflows/tests.yml/badge.svg)
+![Tests - file](https://github.com/sdurand/api-portfolio/actions/workflows/tests.yml)
 
 ## 📘 Documentation
 Swagger : `openapi.yaml`
