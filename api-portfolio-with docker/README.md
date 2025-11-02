@@ -10,7 +10,8 @@ Une mini API REST construite avec Symfony, documentée via OpenAPI, testée avec
 ## 🧪 Tests
 Les tests sont automatisés avec PHPUnit.  
 CI/CD via GitHub Actions : état automatique des tests GitHub Actions (✅ ou ❌)
-![Tests](https://github.com/solined/veilleTechno/actions/workflows/tests-api-portfolio.yml/badge.svg)
+![Tests with Docker](https://github.com/solined/veilleTechno/actions/workflows/tests-api-portfolio-with-docker.yml/badge.svg)
+
 
 
 ## 📘 Documentation
