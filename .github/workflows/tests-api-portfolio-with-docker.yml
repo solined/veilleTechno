@@ -22,9 +22,9 @@ jobs:
           php-version: '8.3'
 
       - name: Install dependencies
-        working-directory: ./api-portfolio-with-docker
+        working-directory: "./api-portfolio-with docker"
         run: composer install --prefer-dist --no-interaction
 
       - name: Run PHPUnit tests
-        working-directory: ./api-portfolio-with-docker
+        working-directory: "./api-portfolio-with docker"
         run: ./vendor/bin/phpunit
