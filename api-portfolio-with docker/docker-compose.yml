@@ -1,0 +1,9 @@
+services:
+  php:
+    build: .
+    container_name: api-php
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8000:8000"
+    command: bash -c "composer install && php -S 0.0.0.0:8000 -t public"
