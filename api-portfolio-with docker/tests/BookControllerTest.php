@@ -2,10 +2,12 @@
 namespace App\Tests;
 
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 class BookControllerTest extends TestCase
 {
-    public function testSomethingSimple()
+    #[Test]
+    public function somethingSimple(): void
     {
         $this->assertTrue(true);
     }
