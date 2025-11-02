@@ -1,0 +1,30 @@
+name: Tests API Portfolio with Docker
+
+on:
+  push:
+    paths:
+      - 'api-portfolio-with docker/**'  # ne déclenche que si ce dossier change
+  pull_request:
+    paths:
+      - 'api-portfolio-with docker/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - name: Install dependencies
+        working-directory: ./api-portfolio-with-docker
+        run: composer install --prefer-dist --no-interaction
+
+      - name: Run PHPUnit tests
+        working-directory: ./api-portfolio-with-docker
+        run: ./vendor/bin/phpunit
