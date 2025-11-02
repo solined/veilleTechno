@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
     bootstrap="vendor/autoload.php"
-    colors="true"
-    verbose="true"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+    
+	executionOrder="depends"
+    failOnRisky="true"
+    failOnWarning="true"
 >
+<!-- executionOrder="depends" → exécute les tests dans l’ordre défini par dépendances.
+	failOnRisky et failOnWarning → utile pour CI/CD.
+-->
     <php>
-        <!-- Indique la classe Kernel de ton projet -->
+        <!-- Défini la classe Kernel de ton projet pour Symfony -->
         <env name="KERNEL_CLASS" value="App\Kernel"/>
     </php>
 
     <testsuites>
+		<!-- Tous les tests de l'API Portfolio -->
         <testsuite name="API Portfolio Test Suite">
             <directory>tests</directory>
         </testsuite>
