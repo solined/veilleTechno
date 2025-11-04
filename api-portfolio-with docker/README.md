@@ -27,24 +27,21 @@ Voir `integration.php` → combine Book API (REST) et SpaceX (GraphQL).
 
 
 ## 🧠 Actions avec docker desktop
-Docker contient : PHP 8.3, Composer, PHPUnit, ton code et tests.
-Composer a installé toutes les dépendances dans /vendor.
-Les tests passent (au moins la partie qui ne dépend pas d’un serveur HTTP réel).
-mettre à jour ton repo GitHub : le CI/CD déclenchera les tests automatiquement via GitHub Actions.
+Docker contient : PHP 8.3, Composer, PHPUnit, ton code et tests.  
+Composer a installé toutes les dépendances dans /vendor.  
+Les tests passent (au moins la partie qui ne dépend pas d’un serveur HTTP réel).  
+Mettre à jour ton repo GitHub : le CI/CD déclenchera les tests automatiquement via GitHub Actions.  
 
 
 Récap Docker
 Pour ton workflow avec Docker :
-- Construire l’image (une seule fois ou après modification du Dockerfile) :
-	docker-compose build
-- Ouvrir un conteneur interactif :
-	winpty docker-compose run php bash
-
-- Là tu es dans /var/www/html et tu peux lancer :
-	composer install
-		Ça installera les bundles Symfony, PHPUnit, etc. dans /var/www/html/vendor (ton projet).
-	./vendor/bin/phpunit
-		PHPUnit lira ton phpunit.xml et exécutera tes tests
-	php integration.php
+- Construire l’image (une seule fois ou après modification du Dockerfile) :  
+    `docker-compose build`
+- Ouvrir un conteneur interactif :  
+    `winpty docker-compose run php bash`
+- Là tu es dans /var/www/html et tu peux lancer :  
+     `composer install` Ça installera les bundles Symfony, PHPUnit, etc. dans /var/www/html/vendor (ton projet).  
+    `./vendor/bin/phpunit` PHPUnit lira ton phpunit.xml et exécutera tes tests.  
+    `php integration.php`
 		
-- Quand tu as fini, tape exit pour quitter le conteneur.
+- Quand tu as fini, tape exit pour quitter le conteneur.  
