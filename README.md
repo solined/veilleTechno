@@ -14,7 +14,11 @@ cf. wiki  : https://github.com/solined/veilleTechno/wiki
 
 ## 🔒 Projets privés disponibles sur demande
 
-Les projets ci-dessous sont **privés**, mais je peux partager un accès GitHub aux recruteurs ou personnes intéressées par mon code :
+Ces dépôts sont privés, mais je peux partager un accès GitHub aux recruteurs ou personnes intéressées par mon code.
+
+### Veille Techno — Projets API Portfolio
+
+Les projets ci-dessous font partie d’un **projet global “API Portfolio”** : une mini API REST construite avec Symfony, documentée via OpenAPI, testée avec PHPUnit et automatisée avec GitHub Actions.  
 
 | Projet | Description | Détails technique | Capture d’écran |
 |--------|-------------|-------------------|-----------------|
